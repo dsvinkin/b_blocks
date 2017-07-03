@@ -51,7 +51,7 @@ output.thi example:
 14919.662 14931.438  170.200    3.802  
 14931.438 56659.690  156.925    0.061  
 
-# Arguments
+# Command line arguments
 -h, --help         print this help and exit  
 -p, --PriorRatio   prior ratio  
 -f, --FileName     input THC (LcType=Poisson) or THI (LcType=Gauss) file name  
