@@ -15,7 +15,7 @@ b_blocks --PriorRatio=9.0 --FileName=input.thc --bbFileName=output.thi --LcType=
 PriorRatio:
 The higher the PriorRatio the less blocks are produced. 
 
-## Poisson counts
+## Poisson counts (LcType=Poisson)
 input.thc format:  
 Ti Tf Counts  
 Ti and Tf - a time bin begin and end  
@@ -27,8 +27,7 @@ input.thc example:
  8.807  11.751   453.890  
 11.751  14.695   473.960  
 
-## Gaussian distributed quantity
-
+## Gaussian distributed quantity (LcType=Gauss)
 input.thi format:  
 Ti Tf y yErr  
 Ti and Tf - a time bin begin and end  
@@ -40,12 +39,12 @@ input.thi example:
 0.064 0.128  10.000  1.000  
 0.128 0.192  10.000  1.000  
 
+## Output
 output.thi (containing Bayesian blocks) format:  
 Ti Tf CountRate CountRateErr  
 Ti and Tf - a block begin and end  
-CountRate - count rate in the block  
-CountRateErr - standerd deviation of the count rate in the block  
-CountRateErr = sqrt(Rate/(Tf-Ti))  
+CountRate - count rate in the block (for Poisson data) or averaged "x" (for Gaussian data)
+CountRateErr - standerd deviation of the count rate in the block, for Poisson data CountRateErr = sqrt(Rate/(Tf-Ti))
 
 output.thi example:  
     2.416 14919.662  156.425    0.102  
