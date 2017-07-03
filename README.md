@@ -32,7 +32,7 @@ input.thi format:
 Ti Tf y yErr  
 Ti and Tf - a time bin begin and end  
 y - a quantity in the bin  
-yErr - standerd deviation of the quantity  
+yErr - standard deviation of the quantity  
 
 input.thi example:  
 0.000 0.064  10.000  1.000  
@@ -44,7 +44,7 @@ output.thi (containing Bayesian blocks) format:
 Ti Tf CountRate CountRateErr  
 Ti and Tf - a block begin and end  
 CountRate - count rate in the block (for Poisson data) or averaged "x" (for Gaussian data)
-CountRateErr - standerd deviation of the count rate in the block, for Poisson data CountRateErr = sqrt(Rate/(Tf-Ti))
+CountRateErr - standard deviation of the count rate in the block, for Poisson data CountRateErr = sqrt(Rate/(Tf-Ti))
 
 output.thi example:  
     2.416 14919.662  156.425    0.102  
@@ -62,4 +62,5 @@ output.thi example:
 In the source code folder run  
 cmake .  
 make  
+
 *gsl* and *gslcblas* are required.
