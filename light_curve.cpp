@@ -29,7 +29,7 @@ double light_curve::get_min_res() const
     double min_res = arr_t_f[0] - arr_t_i[0];
     for(unsigned i=0; i<size(); i++)
     {
-        if(min_res < arr_t_f[i] - arr_t_i[i]) {min_res = arr_t_f[i] - arr_t_i[i];}  
+        if(min_res > arr_t_f[i] - arr_t_i[i]) {min_res = arr_t_f[i] - arr_t_i[i];}  
     }
     return min_res;
 }
