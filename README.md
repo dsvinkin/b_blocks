@@ -57,3 +57,9 @@ output.thi example:
 -f, --FileName     input THC (LcType=Poisson) or THI (LcType=Gauss) file name  
 -o, --bbFileName   output THI file name  
 -t, --LcType       Gauss|Poisson  
+
+# Installation
+In the source code folder run
+cmake .  
+make  
+*gsl* and *gslcblas* are required.
