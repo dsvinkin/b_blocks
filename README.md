@@ -59,7 +59,7 @@ output.thi example:
 -t, --LcType       Gauss|Poisson  
 
 # Installation
-In the source code folder run
+In the source code folder run  
 cmake .  
 make  
 *gsl* and *gslcblas* are required.
